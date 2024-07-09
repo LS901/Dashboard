@@ -16,7 +16,7 @@
 
 .side-nav {
     display: grid;
-    grid-template-rows: 80px 150px;
+    grid-template-rows: 80px 320px;
     background: #3D2C2E;
     color: whitesmoke;
     width: 20%;
@@ -35,8 +35,75 @@
         fill: white;
     }
 
-    & ul {
-        list-style-image: url('images/icons/dashboard.svg');
+    .primary-list {
+        list-style-type: none;
+
+        & li {
+            display: flex;
+        }
+
+        & li:before {
+            display: inline-block;
+            width: 35px;
+            height:auto;
+            padding-right: 10px;
+        }
+
+        & li:nth-child(1):before {
+            content: url('images/icons/home.svg');
+            width:34px;
+        }
+
+        & li:nth-child(2):before {
+            content: url('images/icons/profile.svg');
+            width:34px;
+        }
+
+        & li:nth-child(3):before {
+            content: url('images/icons/messages.svg');
+        }
+
+        & li:nth-child(4):before {
+            content: url('images/icons/history.svg');
+        }
+
+        & li:nth-child(5):before {
+            content: url('images/icons/tasks.svg');
+        }
+
+        & li:nth-child(6):before {
+            content: url('images/icons/communities.svg');
+            width:33px;
+        }
+    }
+
+    .secondary-list {
+        list-style-type: none;
+
+        & li {
+            display: flex;
+        }
+
+        & li:before {
+            display: inline-block;
+            width: 35px;
+            height:auto;
+            padding-right: 10px;
+        }
+
+        & li:nth-child(1):before {
+            content: url('images/icons/settings.svg');
+        }
+
+        & li:nth-child(2):before {
+            content: url('images/icons/support.svg');
+            width: 33px;
+        }
+
+        & li:nth-child(3):before {
+            content: url('images/icons/privacy.svg');
+            width: 33px;
+        }
     }
 }
 
